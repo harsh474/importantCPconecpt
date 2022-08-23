@@ -1,0 +1,16 @@
+void solve()
+{
+ 
+  int arr[4]={1,71,4,51} ; 
+  sort(arr,arr+4) ; 
+  auto l  = lower_bound(arr,arr+4,80) ;
+  cout<< l-arr ;
+   l  = lower_bound(arr,arr+4,61) ;
+  cout<< l-arr ;
+  l  = lower_bound(arr,arr+4,3) ;
+  cout<< l -arr;
+  cout<<endl ;
+   l  = lower_bound(arr,arr+4,4) ; 
+   cout<<*l ;
+  cout<< l-arr ;
+}
