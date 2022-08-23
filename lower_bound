@@ -14,3 +14,4 @@ void solve()
    cout<<*l ;
   cout<< l-arr ;
 }
+/// agar saem element h to -> return index  of first occurance
