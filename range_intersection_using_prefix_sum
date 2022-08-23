@@ -1,0 +1,16 @@
+ map<int, int> m;
+  for (int i = 0; i < n; i++)
+  {
+    m[arr[i]]++;
+    m[dep[i] + 1]--;
+  }
+  int p_sum = 0;
+  int ans = 0;
+  auto it = m.begin();
+  for (int i = 0; i < m.size(); i++)//prexfix sum
+  {
+    p_sum += it->second;
+    ans = max(ans, p_sum);
+    it++;
+  }
+  return ans;
