@@ -1,0 +1,46 @@
+https://codeforces.com/contest/579/problem/A
+
+#include <bits/stdc++.h>
+#define lli long long int
+using namespace std;
+// DataTypes
+using str = string;
+using ll = long long;
+using ld = long double;
+
+#define FL(i, a, b) for (ll i = (ll)a; i < (ll)b; ++i)
+#define fl(i, n) FL(i, 0, n)
+#define rfl(i, n) for (ll i = (ll)(n)-1; i >= 0; i--)
+#define all(x) x.begin(), x.end()
+#define pub push_back
+#define pob pop_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define bb begin()
+#define ee end()
+
+lli n, m, k, x, y, maxx, minn;
+string s;
+
+vector<lli> vi;
+vector<string> vs;
+
+void solve()
+{
+   cin >> n;
+   cout<<__builtin_popcount(n)<<endl ;
+}
+int main()
+{
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   lli t = 1;
+   //cin >> t;
+   while (t--)
+   {
+      solve();
+   }
+   vi.clear();
+   return 0;
+}
