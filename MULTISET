@@ -1,0 +1,38 @@
+https://codeforces.com/contest/519/problem/B 
+https://www.geeksforgeeks.org/multiset-in-cpp-stl/ 
+Multisets are a type of associative containers similar to the set, with the exception that multiple elements can have the same values
+begin() – Returns an iterator to the first element in the multiset –>  O(1)
+end() – Returns an iterator to the theoretical element that follows the last element in the multiset –> O(1)
+size() – Returns the number of elements in the multiset –> O(1)
+max_size() – Returns the maximum number of elements that the multiset can hold –> O(1)
+empty() – Returns whether the multiset is empty –> O(1)
+insert (x) – Inserts the element x in the multiset –> O(log n)
+clear () – Removes all the elements from the multiset –> O(n)
+ erase(x) – Removes all the occurrences of x –> O(log n)
+ 
+ Removing Element From Multiset Which Have Same Value:
+
+a.erase() – Remove all instances of element from multiset having the same value
+a.erase(a.find()) – Remove only one instance of element from multiset having same value
+ 
+ 
+ 
+ 
+inline void dobbysolver(int testcase)
+{
+    int n;
+    cin >> n;
+    multiset<int> s;
+    int a;
+    for (int i = 0; i < n; ++i)
+        cin >> a, s.insert(a);
+    multiset<int>s1;
+    for (int i = 0; i < n - 1; ++i)
+        cin >> a, s1.insert(a), s.erase(s.find(a));
+    cout << *s.begin() << '\n';
+    for (int i = 0; i < n - 2; ++i)
+        cin >> a, s1.erase(s1.find(a));
+    cout << *s1.begin();
+    return;
+}
+ 
