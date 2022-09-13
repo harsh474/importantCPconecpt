@@ -1,0 +1,35 @@
+/*general imf about string*/ 
+string s = " 1" ; 
+cout<<s -> 48 
+similary s = "a" ; will give 97
+
+/* string to int */
+https://www.geeksforgeeks.org/converting-strings-numbers-c-cpp/
+string str1 = "45";
+	string str2 = "3.14159";
+	string str3 = "123";
+
+	int myint1 = stoi(str1); // type of explicit type casting
+	int myint2 = stoi(str2); // type of explicit type casting
+	int myint3 = stoi(str3);  
+  // this take only int in string i.e stoi("abhay") is wrong   
+  
+  /*reverse string*/ 
+  https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
+  string str = "geeksforgeeks";
+    reverse(str.begin(), str.end()); 
+    
+ /* substring of am string * / 
+ https://www.geeksforgeeks.org/substring-in-cpp/
+    string s1 = "Geeks";
+ 
+    // Copy two characters of s1 (starting
+    // from position 3)
+    string r = s1.substr(3, 2);
+ 
+    // prints the result
+    cout << "String is: " << r;
+    String is: ks
+Time complexity: O(n)
+
+Auxiliary Space: O(n)
