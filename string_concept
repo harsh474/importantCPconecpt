@@ -18,6 +18,8 @@ string str1 = "45";
   https://www.geeksforgeeks.org/reverse-a-string-in-c-cpp-different-methods/
   string str = "geeksforgeeks";
     reverse(str.begin(), str.end()); 
+    regex r("WUB");
+	cout<<regex_replace(s,r," ");
     
  /* substring of am string * / 
  https://www.geeksforgeeks.org/substring-in-cpp/
