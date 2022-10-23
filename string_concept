@@ -42,5 +42,9 @@ Auxiliary Space: O(n)
     transform(s2.begin(), s2.end(), s2.begin(), ::tolower);   
     
     /* remove all characters from string*/ 
-      my_str.erase(remove(my_str.begin(), my_str.end(), 'A'),my_str.end()); //remove A from string
+      my_str.erase(remove(my_str.begin(), my_str.end(), 'A'),my_str.end()); //remove A from string 
+      /* remove all characters from string*/ 
+      auto pos = s.find('a');
+if (pos != std::string::npos)    
+    s.erase(pos);
     
