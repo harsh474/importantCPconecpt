@@ -39,5 +39,8 @@ Auxiliary Space: O(n)
  // using transform() function and ::toupper in STL
     transform(s1.begin(), s1.end(), s1.begin(), ::toupper); 
     // using transform() function and ::tolower in STL
-    transform(s2.begin(), s2.end(), s2.begin(), ::tolower); 
+    transform(s2.begin(), s2.end(), s2.begin(), ::tolower);   
+    
+    /* remove all characters from string*/ 
+      my_str.erase(remove(my_str.begin(), my_str.end(), 'A'),my_str.end()); //remove A from string
     
