@@ -1,0 +1,3 @@
+https://www.codespeedy.com/use-push_back-for-vector-pair-in-c/#:~:text=To%20insert%20a%20vector%20pair,the%20values%20in%20vector%20pair. 
+  vector< pair <lli,lli> > p; 
+  p.push_back(make_pair(x, i)); 
