@@ -1,5 +1,6 @@
 https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1 
-https://www.youtube.com/watch?v=ntCGbPMeqgg
+https://www.youtube.com/watch?v=ntCGbPMeqgg 
+// top down approch 
  int knapSack(int w, int wt[], int val[], int n) 
     { 
       int t[n][w] ;
