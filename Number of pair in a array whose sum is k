@@ -1,5 +1,5 @@
 https://codeforces.com/contest/1598/submission/186697250  
-
+// isme hum ye man sakte h pure array ka sum aapke pass h jo hum manga ja raha h ...
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
