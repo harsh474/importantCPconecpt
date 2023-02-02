@@ -1,0 +1,22 @@
+https://leetcode.com/problems/permutations/description/
+https://www.geeksforgeeks.org/stdnext_permutation-prev_permutation-c/
+class Solution {
+             void permutation(int index,vector<int> &nums ,   vector<vector<int>> &v){
+               if(index==nums.size()){ 
+                   v.push_back(nums) ; 
+                   return ;
+               } 
+               for(int i = index ; i<nums.size(); i++){ 
+                   swap(nums[i],nums[index]) ; 
+                   permutation(index+1,nums,v) ;
+                    swap(nums[i],nums[index]) ; 
+               }
+             }
+public:
+    vector<vector<int>> permute(vector<int>& nums) {  
+         vector<vector<int>> v;
+int index =0 ;
+         permutation( index, nums, v) ; 
+         return v ;
+    }
+};
