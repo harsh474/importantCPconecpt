@@ -1,0 +1,21 @@
+ https://www.youtube.com/watch?v=frf7qxiN2qU&ab_channel=takeUforward
+ class Solution{
+    public:
+    int lenOfLongSubarr(int v[],  int n, int k) 
+    { 
+        int len = 0 ; 
+        long long sum =  0 ; 
+        map<long long , int> ma ; 
+        for(int i =0 ; i<n ; i++ ){ 
+            sum+= v[i ] ; 
+            if(sum==k) len = max(len, i+1)   ;
+            long long rem = sum - k ; 
+            if(ma.find(rem)!=ma.end()){  
+                len = max(len , i-ma[rem]) ; 
+            } 
+            if(ma.find(sum)==ma.end()) ma[sum ] = i ;
+        } 
+        return len ;
+    } 
+
+};
